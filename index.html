@@ -7,7 +7,6 @@
 <meta name="description" content="IdeaHub — живые тренды СНГ и пошаговые гайды для создателей контента. 100+ идей в 9 категориях. Без API-ключей и регистраций.">
 <meta name="keywords" content="тренды, гайды, креаторы, СНГ, контент, идеи для видео, ideahub">
 <meta name="robots" content="index, follow">
-<!-- ── Домен проекта: ideahub.ru (замените на свой после регистрации) ── -->
 <link rel="canonical" href="https://ideahub.ru/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="IdeaHub">
@@ -17,12 +16,42 @@
 <meta property="og:locale" content="ru_RU">
 <meta name="age-restriction" content="16+">
 
-<!-- ══════════════════════════════════════════════════════════
-     Яндекс Реклама — Autoplacement (РСЯ), ID площадки 20480765
-     ══════════════════════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════════
+     GOOGLE — ПОДТВЕРЖДЕНИЕ ПРАВ СОБСТВЕННОСТИ (3 способа встроены):
+
+     ① МЕТА-ТЕГ: вставьте токен из Search Console
+        (Настройки → Право собственности → HTML-тег) и снимите комментарий:
+     <meta name="google-site-verification" content="ВАШ_ТОКЕН_СЮДА">
+
+     ② ФАЙЛ: загрузите файл google091de9c1b887175c.html В КОРЕНЬ сайта —
+        рядом с index.html (https://ideahub.ru/google091de9c1b887175c.html)
+
+     ③ ANALYTICS / GTM: коды ниже уже встроены в <head> — замените
+        G-XXXXXXXXXX на ваш ID потока данных Google Analytics,
+        а GTM-XXXXXXX на ID вашего контейнера Tag Manager.
+     ══════════════════════════════════════════════════════════════════ -->
+
+<!-- ═══ Google Analytics (gtag.js) — ЗАМЕНИТЕ G-XXXXXXXXXX ═══ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- ═══ Google Tag Manager — ЗАМЕНИТЕ GTM-XXXXXXX ═══ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- ═══ /Google Tag Manager ═══ -->
+
+<!-- ═══ Яндекс Реклама — Autoplacement (РСЯ), ID площадки 20480765 ═══ -->
 <script src="https://yandex.ru/ads/system/context.js" async></script>
 <script data-page-id="20480765" src="https://yandex.ru/ads/system/ap-loader.js" async></script>
-<!-- ══════════════ /Яндекс Реклама ══════════════ -->
+<!-- ═══ /Яндекс Реклама ═══ -->
 
 <script type="application/ld+json">
 {
@@ -240,9 +269,14 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
 </style>
 </head>
 <body>
+
+<!-- ═══ Google Tag Manager (noscript) — часть подтверждения прав ═══ -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- ═══ /Google Tag Manager (noscript) ═══ -->
+
 <div class="bg-glow"></div>
 
-<!-- ═══ ШАПКА ═══ -->
 <header id="top">
   <div class="wrap header-in">
     <a class="brand" href="#top"><span class="sat">🛰</span><span class="idea">Idea</span><span>Hub</span><span class="domain">ideahub.ru</span></a>
@@ -264,7 +298,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
 
 <div class="wrap">
 
-  <!-- ═══ ГЕРОЙ ═══ -->
   <section class="hero">
     <div class="emoji-row" aria-hidden="true"><span>✨</span><span>📈</span><span>💡</span><span>🫧</span></div>
     <h1>Тренды, которые <span class="accent">прямо сейчас</span> в интернете</h1>
@@ -275,10 +308,8 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     </div>
   </section>
 
-  <!-- ═══ РЕКЛАМНЫЙ КОНТЕЙНЕР РСЯ ═══ -->
   <div class="ya-ad-container" id="ya-ad-top" aria-label="Реклама"></div>
 
-  <!-- ═══ ПАНЕЛЬ СБОРА ═══ -->
   <section class="panel" id="collector">
     <div class="panel-top">
       <div class="live-dot" aria-hidden="true"></div>
@@ -293,7 +324,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     <button class="btn-load" id="load-btn">🔄 Загрузить свежие тренды</button>
   </section>
 
-  <!-- ═══ ЛЕНТА ═══ -->
   <section id="feed">
     <div class="feed-head">
       <h2>📚 Лента гайдов</h2>
@@ -352,10 +382,8 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     </div>
   </section>
 
-  <!-- ═══ РЕКЛАМНЫЙ КОНТЕЙНЕР РСЯ ═══ -->
   <div class="ya-ad-container" id="ya-ad-mid" aria-label="Реклама"></div>
 
-  <!-- ═══ ТREНД ДНЯ ═══ -->
   <section class="tod" id="trend-of-day">
     <span class="tod-label">🎯 челлендж дня</span>
     <h2 id="tod-title">Реакция на неожиданный вопрос</h2>
@@ -366,7 +394,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     <button class="btn btn-primary" id="tod-open">Открыть гайд 🤹</button>
   </section>
 
-  <!-- ═══ О ПРОЕКТЕ ═══ -->
   <section class="about" id="about">
     <h2>🧭 О проекте IdeaHub</h2>
     <div class="about-grid">
@@ -385,7 +412,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     </div>
   </section>
 
-  <!-- ═══ FAQ ═══ -->
   <section class="faq" id="faq">
     <h2>❓ Частые вопросы</h2>
     <details>
@@ -406,7 +432,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
     </details>
   </section>
 
-  <!-- ═══ ЗНАЧКИ ═══ -->
   <section class="badges-sec">
     <h2>🏅 Значки комьюнити</h2>
     <div class="badges-row">
@@ -418,12 +443,10 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
 
 </div>
 
-<!-- ═══ РЕКЛАМНЫЙ КОНТЕЙНЕР РСЯ ═══ -->
 <div class="wrap">
   <div class="ya-ad-container" id="ya-ad-bottom" aria-label="Реклама"></div>
 </div>
 
-<!-- ═══ ПОДВАЛ ═══ -->
 <footer id="contacts">
   <div class="wrap footer-in">
     <div class="footer-domain">🌐 ideahub.ru</div>
@@ -449,7 +472,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
   </div>
 </footer>
 
-<!-- ═══ МОДАЛКА ═══ -->
 <div class="modal-overlay" id="modal" role="dialog" aria-modal="true">
   <div class="modal">
     <button class="close-x" id="modal-close" aria-label="Закрыть">✕</button>
@@ -462,7 +484,6 @@ footer{border-top:1px solid var(--card-border);margin-top:36px;padding:36px 0;po
   </div>
 </div>
 
-<!-- ═══ COOKIE-БАННЕР ═══ -->
 <div class="cookie-banner" id="cookie-banner">
   <p>🍪 Мы используем файлы cookie для работы сайта и показа рекламы (Рекламная сеть Яндекса). Продолжая пользоваться сайтом, вы соглашаетесь с <a data-legal="cookies">политикой использования cookie</a>.</p>
   <button id="cookie-accept">Принять</button>
@@ -485,7 +506,6 @@ const STATUS = {
   peak:{cls:'b-peak',lbl:'🔥 Пик'}, fresh:{cls:'b-new',lbl:'🫧 Свежий'}
 };
 
-/* Шаблоны гайдов по категориям */
 const STEP_TPL = {
   humor:['Придумай ситуацию и комичный твист в конце','Сними первые 2–3 секунды — сразу крючок','Чередуй реакции и крупные планы с субтитрами','Добавь трендовый звук — он даёт охват','Спроси зрителей в комментариях о похожих случаях'],
   aesthetic:['Выбери локацию и свет: окно, закат или неон','Собери кадр из 3–5 деталей одной атмосферы','Сними статичные кадры и пару слоу-мо','Наложи lo-fi или эмбиент без слов','Финал — деталь крупным планом (пар, блик, текстура)'],
@@ -628,9 +648,10 @@ const LEGAL = {
     <p>Сайт не требует регистрации и не собирает персональные данные пользователей напрямую. Могут обрабатываться обезличенные данные: файлы cookie, данные о браузере и устройстве, IP-адрес, информация о просмотрах страниц.</p>
     <h4>3. Cookies и рекламные технологии</h4>
     <p>На Сайте используется технология автоматического размещения рекламы Рекламной сети Яндекса (ООО «ЯНДЕКС», Россия; Autoplacement ID 20480765). Яндекс может использовать cookie и идентификаторы браузера для показа персонализированной рекламы. Обработка этих данных осуществляется Яндексом самостоятельно в соответствии с его политиками: <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener nofollow">yandex.ru/legal/confidential</a>.</p>
+    <p>Также Сайт может использовать Google Analytics (gtag.js) и Google Tag Manager исключительно для подтверждения права собственности на сайт и сбора обезличенной статистики посещений. Обработка данных осуществляется Google LLC в соответствии с его политикой конфиденциальности.</p>
     <p>Пользователь может отключить сохранение cookie в настройках браузера, а персонализацию рекламы Яндекса — в настройках рекламных предпочтений.</p>
     <h4>4. Цель обработки данных</h4>
-    <p>Показ рекламы, обеспечение работоспособности Сайта, обезличенная статистика посещений.</p>
+    <p>Показ рекламы, подтверждение прав на сайт, обеспечение работоспособности Сайта, обезличенная статистика посещений.</p>
     <h4>5. Контакты</h4>
     <p>Вопросы по Политике: <a href="mailto:[email protected]">[email protected]</a></p>`},
   terms:{title:'Пользовательское соглашение',html:`
@@ -651,6 +672,7 @@ const LEGAL = {
     <h4>Какие cookie использует IdeaHub</h4>
     <p><b>Технические</b> — запоминание выбора пользователя (например, согласие на cookie).<br>
     <b>Рекламные</b> — устанавливаются Рекламной сетью Яндекса (Autoplacement ID 20480765) для показа релевантных объявлений и ограничения частоты показа.<br>
+    <b>Аналитические</b> — Google Analytics / Google Tag Manager: обезличенные данные о посещениях и подтверждение прав на сайт.<br>
     <b>Статистические</b> — обезличенные данные о посещениях.</p>
     <h4>Как отключить cookie</h4>
     <p>В настройках браузера можно запретить сохранение cookie или удалять их. Отключение cookie может ограничить работу рекламных сервисов, но не влияет на доступность основного функционала Сайта.</p>`},
